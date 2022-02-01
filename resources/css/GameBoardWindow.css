@@ -1,0 +1,47 @@
+.root
+{
+    -fx-background-color: rgba(37, 53, 85, 1);
+}
+
+.button
+{
+    -fx-font-family: "Verdana";
+    -fx-font-size: 18;
+}
+
+/*
+    This is the internal layout of a ProgressBar.
+    The .progress-bar style class doesn't actually refer to the object we see, so we must use selectors to specifically
+    target either the background or the bar itself. See substructure on the Reference or Modena.css for more info on
+    the hierarchy and look-up colors (like -fx-accent, if you don't remember where that came from).
+*/
+.progress-bar > .bar
+{
+    -fx-background-color: rgba(27, 145, 77, 1);
+}
+
+.progress-bar > .track
+{
+    -fx-background-color: rgba(79, 79, 79, 1);
+}
+
+#panel
+{
+    -fx-background-color : rgba(50, 50, 50, 0.7);
+}
+
+#title
+{
+    -fx-font-family: "Verdana";
+    -fx-font-size: 36;
+    -fx-text-alignment: center;
+    -fx-text-fill: rgba(255, 255, 255, 1);
+}
+
+#subtitle
+{
+    -fx-font-family: "Verdana";
+    -fx-font-size: 26;
+    -fx-text-alignment: center;
+    -fx-text-fill: rgba(255, 255, 255, 1);
+}

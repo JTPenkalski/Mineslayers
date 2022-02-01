@@ -1,0 +1,15 @@
+.root
+{
+    -fx-background-image: url("/images/background1.png");
+}
+
+.button
+{
+    -fx-background-image: url("/images/white.png");
+}
+
+#credits
+{
+    -fx-font-weight: bold;
+    -fx-text-fill: rgba(255, 255, 255, 1);
+}

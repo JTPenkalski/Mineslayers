@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.mineslayers.ui.GameBoard?>
+<?import com.mineslayers.ui.InventoryPane?>
+<?import com.mineslayers.ui.ItemCounter?>
+<?import com.mineslayers.ui.ItemIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<HBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml">
+    <GameBoard fx:id="gameBoard" alignment="CENTER" boardWidth="12" boardHeight="10" cellSize="64" HBox.hgrow="ALWAYS"/>
+    <VBox alignment="CENTER" id="panel" prefWidth="350.0" spacing="15.0">
+        <Label fx:id="stageNameLabel" alignment="CENTER" id="title" maxWidth="Infinity" text="Forest"/>
+        <Label fx:id="levelNameLabel" alignment="CENTER" id="subtitle" maxWidth="Infinity" text="Level 1-1">
+            <VBox.margin>
+                <Insets top="-15.0"/>
+            </VBox.margin>
+        </Label>
+        <ProgressBar fx:id="levelProgressBar" maxWidth="Infinity" prefHeight="25.0" progress="NaN"/>
+        <HBox alignment="CENTER" spacing="10.0">
+            <ItemCounter fx:id="coinItemCounter" imageName="coin"/>
+            <ItemCounter fx:id="flagItemCounter" imageName="flag"/>
+            <ItemCounter fx:id="lifeItemCounter" imageName="heart"/>
+        </HBox>
+        <HBox alignment="CENTER" spacing="15.0">
+            <VBox alignment="CENTER" spacing="50.0">
+                <ItemIcon fx:id="primaryArmorItemIcon"/>
+                <ItemIcon fx:id="primaryWeaponItemIcon"/>
+            </VBox>
+            <InventoryPane fx:id="playerInventoryPane"/>
+        </HBox>
+        <HBox alignment="CENTER" spacing="15.0">
+            <Button fx:id="useButton" maxWidth="Infinity" mnemonicParsing="false" prefHeight="35.0" text="Use/Equip" HBox.hgrow="ALWAYS"/>
+            <Button fx:id="trashButton" maxWidth="Infinity" mnemonicParsing="false" prefHeight="35.0" text="Trash" HBox.hgrow="ALWAYS"/>
+        </HBox>
+        <Button fx:id="quitButton" maxWidth="Infinity" mnemonicParsing="false" prefHeight="35.0" text="Quit Game" HBox.hgrow="ALWAYS"/>
+        <padding>
+            <Insets left="15.0" right="15.0"/>
+        </padding>
+    </VBox>
+</HBox>

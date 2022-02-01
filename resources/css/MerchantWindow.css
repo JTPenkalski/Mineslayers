@@ -1,0 +1,36 @@
+.root
+{
+    -fx-background-image: url("/images/background1.png");
+}
+
+.button
+{
+    -fx-font-family: "Verdana";
+    -fx-font-size: 18;
+}
+
+#right
+{
+    -fx-background-color : rgba(50, 50, 50, 0.4);
+}
+
+#text
+{
+    -fx-font-family: "Verdana";
+    -fx-font-size: 22;
+    -fx-text-fill: rgba(255, 255, 255, 1);
+}
+
+#title
+{
+    -fx-background-color : rgba(50, 50, 50, 1);
+    -fx-font-family: "Verdana";
+    -fx-font-size: 24;
+    -fx-text-fill: rgba(255, 255, 255, 1);
+}
+
+#selected-item
+{
+    -fx-background-color : rgba(50, 50, 50, 0.7);
+    -fx-background-radius : 25, 25, 25, 25;
+}

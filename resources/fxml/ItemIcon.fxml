@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.image.ImageView?>
+
+<fx:root type="StackPane" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml">
+    <ImageView fx:id="backgroundImageView" fitHeight="100.0" fitWidth="100.0"/>
+    <ImageView fx:id="itemImageView" fitHeight="75.0" fitWidth="75.0"/>
+    <ImageView fx:id="selectedImageView" fitHeight="100.0" fitWidth="100.0"/>
+</fx:root>

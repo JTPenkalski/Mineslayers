@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<fx:root type="StackPane" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml">
+    <ImageView fx:id="baseImageView"/>
+    <ImageView fx:id="detailImageView"/>
+    <GridPane>
+        <columnConstraints>
+            <ColumnConstraints halignment="CENTER" prefWidth="32"/>
+            <ColumnConstraints halignment="CENTER" prefWidth="32"/>
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints valignment="CENTER" prefHeight="32"/>
+            <RowConstraints valignment="CENTER" prefHeight="32"/>
+        </rowConstraints>
+        <Label fx:id="neighboringEnemiesLabel" alignment="CENTER" maxHeight="Infinity" maxWidth="Infinity" style="-fx-text-fill: rgba(232, 80, 23, 1);" GridPane.rowIndex="0" GridPane.columnIndex="0">
+            <font>
+                <Font name="Consolas Bold" size="28.0"/>
+            </font>
+        </Label>
+        <Label fx:id="neighboringItemsLabel" alignment="CENTER" maxHeight="Infinity" maxWidth="Infinity" style="-fx-text-fill: rgba(255, 230, 123, 1);" GridPane.rowIndex="1" GridPane.columnIndex="1">
+            <font>
+                <Font name="Consolas Bold" size="28.0"/>
+            </font>
+        </Label>
+    </GridPane>
+    <ImageView fx:id="mouseInteractionImageView"/>
+</fx:root>

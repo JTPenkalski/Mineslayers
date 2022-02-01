@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<?import com.mineslayers.ui.ItemIcon?>
+<fx:root type="GridPane" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" alignment="CENTER" hgap="5.0" vgap="5.0">
+    <columnConstraints>
+        <ColumnConstraints halignment="CENTER" />
+        <ColumnConstraints halignment="CENTER" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints valignment="CENTER" />
+        <RowConstraints valignment="CENTER" />
+        <RowConstraints valignment="CENTER" />
+        <RowConstraints valignment="CENTER" />
+    </rowConstraints>
+    <ItemIcon inventoryIndex="0" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+    <ItemIcon inventoryIndex="1" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+    <ItemIcon inventoryIndex="2" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+    <ItemIcon inventoryIndex="3" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+    <ItemIcon inventoryIndex="4" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+    <ItemIcon inventoryIndex="5" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+    <!-- <ItemIcon inventoryIndex="6" GridPane.columnIndex="0" GridPane.rowIndex="3" GridPane.columnSpan="2" /> -->
+</fx:root>

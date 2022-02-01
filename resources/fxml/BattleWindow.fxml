@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.mineslayers.ui.ItemIcon?>
+<?import com.mineslayers.ui.InventoryPane?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml">
+    <center>
+        <Pane>
+            <ImageView fx:id="enemy1ImageView" fitHeight="150.0" fitWidth="150.0" layoutX="200.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true"/>
+            <Label fx:id="enemy1StatsLabel" alignment="CENTER" id="stat-text" layoutX="200.0" layoutY="165.0" prefHeight="50.0" prefWidth="150.0"/>
+            <ImageView fx:id="enemy2ImageView" fitHeight="150.0" fitWidth="150.0" layoutX="50.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true"/>
+            <Label fx:id="enemy2StatsLabel" alignment="CENTER" id="stat-text" layoutX="50.0" layoutY="265.0" prefHeight="50.0" prefWidth="150.0"/>
+            <ImageView fx:id="enemy3ImageView" fitHeight="150.0" fitWidth="150.0" layoutX="350.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true"/>
+            <Label fx:id="enemy3StatsLabel" alignment="CENTER" id="stat-text" layoutX="350.0" layoutY="265.0" prefHeight="50.0" prefWidth="150.0"/>
+            <ImageView fx:id="enemy4ImageView" fitHeight="150.0" fitWidth="150.0" layoutX="200.0" layoutY="250.0" pickOnBounds="true" preserveRatio="true"/>
+            <Label fx:id="enemy4StatsLabel" alignment="CENTER" id="stat-text" layoutX="200.0" layoutY="400.0" prefHeight="50.0" prefWidth="150.0"/>
+            <ImageView fx:id="playerImageView" fitHeight="150.0" fitWidth="150.0" layoutX="775.0" layoutY="325.0" pickOnBounds="true" preserveRatio="true"/>
+            <Label fx:id="playerStatsLabel" alignment="CENTER" id="stat-text" layoutX="775.0" layoutY="475.0" prefHeight="50.0" prefWidth="150.0" text="Player&#10;[Player HP]"/>
+        </Pane>
+    </center>
+    <right>
+        <VBox alignment="CENTER" id="right" prefWidth="300.0" spacing="15.0">
+            <HBox alignment="CENTER" spacing="25.0">
+                <ItemIcon fx:id="primaryArmorItemIcon"/>
+                <ItemIcon fx:id="primaryWeaponItemIcon"/>
+            </HBox>
+            <InventoryPane fx:id="playerInventoryPane"/>
+        </VBox>
+    </right>
+    <bottom>
+        <HBox alignment="CENTER_LEFT" id="bottom" spacing="25.0">
+            <Label fx:id="turnDetailsLabel" alignment="CENTER" id="turn-details" prefHeight="175.0" prefWidth="850.0" text="Attack or Defend to begin. You may choose to use items or equip different gear at any point during battle."/>
+            <VBox alignment="CENTER" spacing="10.0" HBox.hgrow="ALWAYS">
+                <Button fx:id="attackButton" maxWidth="Infinity" mnemonicParsing="false" prefHeight="35.0" text="Attack"/>
+                <Button fx:id="defendButton" maxWidth="Infinity" mnemonicParsing="false" prefHeight="35.0" text="Defend"/>
+                <Button fx:id="useButton" maxWidth="Infinity" mnemonicParsing="false" prefHeight="35.0" text="Use/Equip"/>
+                <padding>
+                    <Insets left="25.0" right="25.0"/>
+                </padding>
+            </VBox>
+            <padding>
+                <Insets bottom="10.0" top="10.0"/>
+            </padding>
+        </HBox>
+    </bottom>
+</BorderPane>

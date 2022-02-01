@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.GridPane?>
+
+<fx:root type="GridPane" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml">
+    <!--
+    Really not much to put here, just here so GameBoard can be used in FXML.
+    All initialization done procedurally. ¯\_(ツ)_/¯
+    -->
+</fx:root>

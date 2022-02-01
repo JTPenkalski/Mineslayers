@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<fx:root type="VBox" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" alignment="CENTER">
+    <ImageView fx:id="itemImageView" fitHeight="100.0" fitWidth="100.0" />
+    <Label fx:id="counterLabel">
+        <font>
+            <Font name="Consolas Bold" size="28.0" />
+        </font>
+    </Label>
+</fx:root>
